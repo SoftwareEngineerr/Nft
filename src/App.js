@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { router } from './routes/routes';
+import { useRoutes } from 'react-router'
+
+// Importing Scss
+import './theme/main.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// importing slick
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+import './theme/main.css'
+
 
 function App() {
+  const routing = useRoutes(router);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {routing}
     </div>
   );
 }

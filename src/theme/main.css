@@ -1,0 +1,17 @@
+.slick-slider{
+    max-width: 1350px;
+    margin: auto;
+}
+.slick-arrow.slick-prev{
+    top: 720px;
+    left: 43%;
+}
+
+.slick-arrow.slick-next{
+    top: 720px;
+    right: 45%;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 49px;
+    color: black;
+}
